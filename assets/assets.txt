@@ -1,0 +1,12 @@
+background.png
+music.mp3
+doraemon.png
+doracake.png
+doraemonRight.png
+room.jpg
+drop.mp3
+doraemonLeft.png
+.gitkeep
+bucket.png
+drop.png
+room2.jpg
