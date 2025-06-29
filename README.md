@@ -72,5 +72,3 @@ This game was created by following the [libGDX "A Simple Game" tutorial](https:/
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
-
-Built with [libGDX](https://libgdx.com/).
