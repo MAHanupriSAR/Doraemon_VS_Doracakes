@@ -1,33 +1,76 @@
-# Drop
+# Doraemon VS Doracake
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+A simple falling objects game built with [libGDX](https://libgdx.com/).
 
-This project was generated with a template including simple application launchers and an empty `ApplicationListener` implementation.
+## Overview
 
-## Platforms
+**Doraemon VS Doracake** is a cross-platform game where you control Doraemon to catch falling Doracakes. The project uses libGDX and supports desktop (LWJGL3) out of the box.
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+## Features
 
-## Gradle
+- Move the Doraemon using keyboard or touch input
+- Catch falling doracakes
+- Background music and sound effects
+- Responsive viewport and smooth animation
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+## Screenshots
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+![Gameplay Screenshot](screenshot.png)
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+## Project Structure
+
+- `core/`: Shared game logic and assets
+- `lwjgl3/`: Desktop launcher using LWJGL3
+- `assets/`: Game assets (images, sounds)
+- `build.gradle`, `settings.gradle`: Project configuration
+
+## Getting Started
+
+### Prerequisites
+
+- Java 8 or higher
+- [Gradle](https://gradle.org/) (or use the included Gradle wrapper)
+
+### Running the Game
+
+To run the desktop version:
+
+```sh
+git clone https://github.com/MAHanupriSAR/Doraemon_VS_Doracakes.git
+cd Doraemon_VS_Doracakes
+./gradlew lwjgl3:run
+```
+
+### Building a JAR
+
+To build a runnable JAR:
+
+```sh
+git clone https://github.com/MAHanupriSAR/Doraemon_VS_Doracakes.git
+cd Doraemon_VS_Doracakes
+./gradlew lwjgl3:jar
+```
+
+The output will be in `Doraemon_VS_Doracakes/lwjgl3/build/libs/`
+
+## Controls
+
+- **Left/Right Arrow Keys**: Move the Doraemon
+- **Touch/Mouse Drag**: Move the Doraemon (if supported)
+- **Catch** the falling doracakes
+
+## Assets
+
+All game assets are located in the `assets/` folder.
+
+## Credits
+
+This game was created by following the [libGDX "A Simple Game" tutorial](https://libgdx.com/wiki/start/a-simple-game).
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with [libGDX](https://libgdx.com/).
